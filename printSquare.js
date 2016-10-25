@@ -10,8 +10,6 @@
 // *****
 
 function printSquare(size) {
-  var height = size;
-  var width = size;
   for (var i = 1; i <= size; i++) {
     var row = "";
     for (var j = 1; j <= size; j++) {
