@@ -12,3 +12,18 @@ function factors(number) {
 }
 
 factors(10);
+
+function factors2(num) {
+  var factors = [];
+  for (var i = 0; i <= Math.sqrt(num); i++) {
+    if (num % i === 0) {
+      factors.push(i);
+      if (i !== num / i) {
+        factors.push(num / i);
+      }
+    }
+  }
+  console.log("The factors of " + num + " are: " + factors);
+}
+
+factors2(10);
